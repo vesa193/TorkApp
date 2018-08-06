@@ -1,0 +1,57 @@
+@import ../helpers/mixins
+@import ../helpers/vars
+
+
+.section03
+    width: 100%
+    display: flex
+    justify-content: center
+    background: #f4f8fb
+    padding: 0 200px 0 160px
+
+
+    &__wrap
+        width: 100%
+        display: flex
+        justify-content: center
+
+    &__text
+        width: 100%
+        padding: 40px 40px 10px 40px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        background: white
+
+
+        p
+            margin-top: 20px
+            color: #666666
+
+
+    &__img
+        width: 100%
+        height: 299px
+        +background('../img/bg-section03.jpg', center, no-repeat)
+        background-size: cover
+
+    &__info
+        position: relative
+        bottom: -20px
+        
+        p
+            display: flex
+            align-items: center
+            font-weight: 600
+
+    &__num
+        font-size: 2em
+        font-weight: 300
+
+
+
+.divider
+    border-right: 2px solid #eee
+    height: 50px
+    margin: 0  20px
+

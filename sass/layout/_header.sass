@@ -1,0 +1,120 @@
+@import ../helpers/mixins
+@import ../helpers/vars
+
+.header
+    width: 100%
+    height: 891px
+    +background('../img/header-bg.jpg', center, no-repeat)
+    background-size: cover
+    overflow: hidden
+
+    &__nav
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        padding-top: 40px
+
+        &__wrap 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 90%
+
+        &__items
+            display: flex
+            align-items: center
+
+            input
+                padding: 10px 10px 10px 30px
+                border-radius: 50px
+                border: 0
+                background: $dark-gray
+                color: $light-gray
+                cursor: pointer
+                +transition(all, .3s, ease-in-out)
+
+                &:focus
+                    background: $white
+                    color: $light-gray
+
+            a
+                position: relative
+                width: 100px
+                //margin: 0 20px 0 20px
+                padding: 10px 20px
+                background: $purple
+                border-radius: 50px
+                text-align: center
+                color: #fff
+                font-size: $text
+                font-weight: 600
+                +transition(all, .3s, ease-in-out)
+
+                &:hover, &:focus 
+                    background: #fff
+                    color: $dark-gray
+
+            img
+                cursor: pointer
+                
+
+        &__input
+            position: relative
+
+            img
+                position: absolute
+                top: 13px
+                right: 13px
+
+        &__menu
+            position: absolute
+            width: 300px
+            height: 500px
+            background: rgba(000, 000, 000, .89)
+            right: 0
+            top: 125px
+            padding: 20px
+            box-shadow: 2px 2px 25px black
+            opacity: 0
+            +transition(all, .3s, ease-in-out)
+
+            li
+                margin-bottom: 20px
+        
+                a
+                    color: #666666
+
+                    &:hover, &:focus
+                        color: white
+
+    &__content   
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        
+
+    &__text
+        color: #fff
+
+        h1
+            font-weight: 300
+
+        p
+            margin-top: 20px
+
+
+.header__nav__menu--open
+    opacity: 1
+    +transition(opacity, .3s, ease-in-out)
+    
+
+    .header__nav__hamburger
+        display: none
+
+
+
+    .header__nav__link--active
+        color: $purple

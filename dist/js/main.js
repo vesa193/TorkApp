@@ -1,0 +1,1 @@
+function components(){var e=document.querySelector(".header__nav__hamburger--bs"),n=document.querySelector(".header__nav__menu");e.addEventListener("click",function(){n.classList.toggle("header__nav__menu--open")})}components();

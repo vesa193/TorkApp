@@ -1,0 +1,438 @@
+@import ../helpers/mixins
+@import ../helpers/vars
+
+
+
+// Defined values
+$screen-xs-min: 320px;
+$screen-sm-min: 768px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-md-min: 992px;
+$screen-sm-max: ($screen-md-min - 1);
+$screen-lg-min: 1200px;
+$screen-md-max: ($screen-lg-min - 1);
+
+
+
+@media all and (min-width: $screen-xs-min) and (max-width: $screen-xs-max) 
+
+    //header
+    .header
+        &__nav
+
+            &__items
+                
+            &__btn--bs
+                display: none
+            
+
+            &__input--bs
+                display: none
+            
+
+            &__hamburger
+                display: flex
+
+                
+
+        &__text
+            padding: 0 20px
+
+        &__menu
+            position: relative
+            height: 500px
+
+            li
+                a
+                    color: white
+
+        &__nav__items--sm
+            align-items: flex-start
+            flex-direction: column
+            margin: 40px 0
+
+        &__nav__input
+            margin-bottom: 40px 
+            
+            
+
+
+
+    //screens
+    .screens
+        height: 790px
+        overflow: hidden
+
+        &__wrap
+            width: 100%
+            padding: 0 20px
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            align-items: center
+
+        &__text
+            margin-bottom: 20px
+
+        &__mess
+            display: none
+
+
+    //text
+    .text
+
+        &__wrap
+            width: 100%
+            padding: 0 20px
+            display: flex
+            flex-direction: column
+            align-items: center
+
+
+        &__card
+            width: 100%
+            margin-bottom: 40px
+
+            &:last-child
+                margin: 0
+
+
+    //designed
+    .designed
+
+        &__wrap
+            width: 100%
+            padding: 0 20px
+
+            h4
+                text-align: center
+
+        &__img
+            background-size: cover
+
+    //detext
+    .detext
+
+        &__wrap
+            width: 100%
+            padding: 0 20px
+            flex-direction: column
+            align-items: center
+
+        &__card
+            width: 100%
+            margin-bottom: 40px
+
+            &:last-child
+                margin: 0
+
+    //section01
+    .section01
+
+        &__wrap
+            width: 100%
+            flex-direction: column
+        
+        &__content
+            width: 100%
+
+        &__text
+            width: 100%
+            padding: 20px
+
+        &__img
+            width: 100%
+
+
+    //section01
+    .section02
+
+        &__wrap
+            width: 100%
+            flex-direction: column
+        
+        &__content
+            width: 100%
+
+        &__text
+            width: 100%
+            padding: 20px
+
+        &__img
+            width: 100%
+            height: 461px
+            padding: 230px 0
+
+    //section03
+    .section03
+        padding: 0
+
+        &__wrap
+            width: 100%
+            flex-direction: column
+        
+        &__content
+            width: 100%
+
+        &__text
+            width: 100%
+            padding: 20px
+
+        &__img
+            width: 100%
+            height: 461px
+
+
+    .footer
+        padding: 100px 20px
+        &__info
+            flex-direction: column
+            align-items: center
+
+        &__desc
+            width: 100%
+
+        &__newsletter
+            width: 100%
+            margin-top: 40px
+
+
+        &__linx
+            width: 100%
+            display: flex
+            justify-content: center
+
+
+        &__cards
+            width: 100%
+            flex-direction: column
+            align-items: center 
+
+        &__card
+            width: 100%
+            margin-bottom: 40px
+
+            &:last-child
+                margin: 0
+
+
+
+//small devices (tablet, notebook)
+
+@media all and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) 
+    //default
+
+    //header
+    .header
+    
+        &__nav
+
+            &__items
+
+                &--bs
+                    width: 50%
+                    justify-content: space-around
+
+
+                &--sm
+                    display: none
+    
+    //screens
+    .screens
+
+        &__mess
+            display: none
+
+
+    //text
+    .text
+
+        &__wrap
+            width: 100%
+            padding: 0 20px
+
+    //designed
+    .designed
+
+        &__wrap
+            width: 100%
+            padding: 0 20px
+
+    //detext
+    .detext
+
+        &__wrap
+            width: 100%
+            padding: 0 20px
+
+    //section02
+    .section02
+
+        &__img
+            height: auto
+
+    //section03
+    .section03
+        padding: 0
+
+        &__text
+            padding: 40px 40px 20px 40px
+
+        &__img
+            height: auto
+
+    .footer
+
+        &__wrap
+            width: 100%
+            padding: 0 20px            
+
+            
+            
+ 
+
+//medium devices (laptop)
+
+@media all and (min-width: $screen-md-min) and (max-width: $screen-md-max)
+
+    //header
+    .header
+    
+        &__nav
+
+            &__items
+
+                &--bs
+                    width: 50%
+                    justify-content: space-around
+
+
+                &--sm
+                    display: none
+
+    //screens
+    .screens
+        width: 100%
+        height: 530px
+
+        &__wrap
+            width: 100%
+            overflow: hidden
+
+        &__text
+            padding: 0 20px
+
+        &__imgs
+            display: flex
+
+            img
+                &:first-child
+                    height: 548px
+                    top: 200px
+
+                &:last-child
+                    height: 820px
+
+    //designed
+    .designed
+
+        &__wrap
+            width: 100%
+            padding: 0 20px
+
+    
+    //detext
+    .detext
+
+        &__wrap
+            width: 100%
+            padding: 0 20px
+
+    //section02
+    .section02
+        padding: 0 0 0 0
+
+    //section03
+    .section03
+        padding: 0 0 0 0
+
+    //section04
+    .section04
+        
+        &__text
+            padding: 80px
+
+    
+    .footer
+
+        &__wrap
+            width: 100%
+            padding: 0 20px
+            
+        
+ 
+
+//large screen
+
+@media all and (min-width: $screen-lg-min) 
+
+    //header
+    .header
+
+        &__nav
+
+            &__items
+
+                a
+                    margin: 0 20px 0 20px
+
+                &--bs
+                    width: 40%
+                    justify-content: space-around
+
+
+                &--sm
+                    display: none
+
+    //screens
+    .screens
+        
+        &__imgs
+
+            img
+
+                &:first-child
+                    top: 200px
+
+                &:last-child
+                    top: -55px
+
+    //text
+    .text
+
+        &__wrap
+            width: 80%
+
+    
+    //section02
+    .section02
+        padding: 0 0 0 160px
+
+        &__img
+            height: 461px 
+
+    //section03
+    .section03
+        padding: 0 200px 0 160px
+
+    //section04
+    .section04
+        
+        &__text
+            height: auto
+            padding: 80px 100px
+
+    .footer
+
+        &__wrap
+            width: 80%

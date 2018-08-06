@@ -1,0 +1,92 @@
+@import ../helpers/mixins
+@import ../helpers/vars
+
+.footer
+    display: flex
+    justify-content: center
+    padding: 100px 0
+    background: #1a2124
+    color: white
+
+    &__wrap
+        //width: 80%
+
+        span
+            font-size: $text
+            font-weight: 600
+            margin-bottom: 20px
+
+    &__info
+        display: flex
+        justify-content: space-between
+        margin-bottom: 50px
+        
+
+    &__desc
+        width: 45%
+
+        p
+            margin-top: 20px
+
+    &__newsletter
+        width: 45%
+
+        &__input
+            display: flex
+            align-items: flex-end
+
+            input
+                width: 80%
+                margin-top: 20px
+                padding: 10px
+                border: 0
+                border-radius: 2px
+                border-bottom-right-radius: 0
+                border-top-right-radius: 0
+                background: #f6f7fa
+
+            a
+                background: $purple
+                border-radius: 2px
+                margin-left: -3px
+                padding: 8.5px
+                border-top-left-radius: 0
+                border-bottom-left-radius: 0
+
+                &:hover, &:focus
+                    background: #666666
+
+                
+
+        p
+            margin-top: 10px
+
+    &__linx
+        width: 80%
+        display: flex
+
+    &__cards
+        width: 80%
+        display: flex
+
+        
+
+    &__card
+        width: 25%
+
+        span
+            margin-bottom: 20px
+
+        
+
+        li
+            &:first-child
+                margin-top: 20px
+
+            a
+                color: white
+                font-size: $text
+                font-weight: 300
+
+                &:hover, &:focus
+                    color: #666666

@@ -1,0 +1,56 @@
+@import ../helpers/mixins
+@import ../helpers/vars
+
+       
+	
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	font-family: $base-font
+	line-height: 150%
+
+body 
+	font-family: 'Open Sans'	
+
+ul 
+	margin: 0
+
+	li 
+		list-style: none
+
+a 
+	text-decoration: none   
+	+transition(all, .3s, ease-in-out)
+
+	&:hover, &:focus
+		text-decoration: none 
+
+
+	&:hover, &:focus
+        text-decoration: none
+
+h1
+	font-size: $h1
+    
+
+h4
+	font-size: $h4
+	font-weight: 300
+
+h5
+	font-size: 2em
+	font-weight: 300
+
+h6
+	font-size: $h6
+	font-weight: 300
+
+
+h3
+	letter-spacing: .05em	
+p
+	font-size: $text
+    font-weight: 600 
+	line-height: 200%
